@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+header div.logoSite {
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header nav {
+    background-color: black;
+    padding: 0.5em;
+    display: block;
+    overflow: hidden;
+}
+header nav div.menuGroup{
+    width: 1024px;
+    margin: auto;
+    overflow: hidden;
+}
+header nav section{
+    width: 50%;
+    box-sizing: border-box;
+    float: right;
+}
+
+header nav section.loginMenu {
+    text-align: right;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0.5em;
+}
+header nav a:hover {
+    color: yellow;
+}
+
+article.articleDetail {
+    max-width: 1024px;
+    margin: auto;
+}
+
+article.articleDetail p {
+    margin: 0.5em 0em;
+}
