@@ -1,9 +1,14 @@
 * {
     margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
     margin: 0;
+}
+
+header {
+    padding: 1em 0;
 }
 
 header div.logoSite {
@@ -11,7 +16,10 @@ header div.logoSite {
     text-align: center;
     font-size: 2em;
     font-weight: bold;
-    font-family: Helvetica, Arial, sans-serif;
+}
+header div.subTitle {
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 header nav {
@@ -20,11 +28,50 @@ header nav {
     display: block;
     overflow: hidden;
 }
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0.5em;
+    display: block;
+    text-align: center;
+}
+header nav a:hover {
+    color: yellow;
+}
+
+@media screen and (min-width: 800px){
+    header nav {
+        border: red solid 1px;
+    }
+
+    header nav a {
+        text-align: left;
+        float: left;
+    }
+    header nav div.loginMenu {
+        float: right;
+    }
+
+    header nav .menuGroup {
+        max-width: 1024px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    header nav {
+        border: yellow solid 1px;
+    }
+}
+/*
 header nav div.menuGroup{
     width: 1024px;
     margin: auto;
     overflow: hidden;
-}
+}*/
+/*
 header nav section{
     width: 50%;
     box-sizing: border-box;
@@ -33,23 +80,41 @@ header nav section{
 
 header nav section.loginMenu {
     text-align: right;
-}
+}*/
 
-header nav a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 0.5em;
-}
-header nav a:hover {
-    color: yellow;
-}
+
 
 article.articleDetail {
     max-width: 1024px;
     margin: auto;
+    padding: 1em 2em;
+    overflow: hidden;
 }
 
+article.articleDetail h1 {
+    margin-bottom: 1em;
+}
 article.articleDetail p {
     margin: 0.5em 0em;
+}
+
+article.articleDetail figure {
+    width: 100%;
+}
+article.articleDetail figure img{
+    width: 100%;
+}
+
+article.articleDetail aside {
+    background: #ededed;
+    padding: 1em 2em;
+    margin-left: -2em;
+    margin-right: -2em;
+    margin-bottom: -1em;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid rgb(199, 197, 197);
+    padding: 1em 2em;
 }
