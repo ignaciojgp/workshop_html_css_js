@@ -1,0 +1,143 @@
+main aside form button, html body div main nav.breadCrumbs a, html body div header menu a {
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 10px;
+}
+main aside form button:hover, html body div main nav.breadCrumbs a:hover, html body div header menu a:hover {
+  color: white;
+  background: #261758;
+}
+
+*, input, textarea {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html a {
+  color: #887CAF;
+}
+html body {
+  margin: 0;
+}
+html body div header {
+  overflow: hidden;
+  padding: 1em 1em 0 1em;
+}
+html body div header div.logoSite {
+  font-size: 2em;
+  font-weight: bold;
+}
+html body div header div.subTitle {
+  color: #887CAF;
+}
+html body div header menu {
+  padding: 0;
+  background: #7887AB;
+  padding: 1em;
+  overflow: hidden;
+  text-transform: uppercase;
+  margin: 1em -1em 0 -1em;
+}
+@media screen and (min-width: 800px) {
+  html body div header menu {
+    padding: 1em 0;
+  }
+  html body div header menu div.loginMenu {
+    float: right;
+  }
+  html body div header menu div.mainMenu {
+    float: left;
+  }
+}
+html body div header menu div.menuGroup {
+  overflow: hidden;
+  margin: 0 -1em;
+}
+@media screen and (min-width: 800px) {
+  html body div header menu div.menuGroup {
+    max-width: 1054px;
+    margin: auto;
+  }
+}
+html body div header menu a {
+  box-sizing: border-box;
+  display: block;
+  color: white;
+}
+@media screen and (min-width: 800px) {
+  html body div header menu a {
+    display: inline-block;
+  }
+}
+html body div nav.breadCrumbs {
+  max-width: 1024px;
+  margin: auto;
+  display: block;
+  padding: 1em;
+}
+html body div main {
+  overflow: hidden;
+  padding: 0 1em;
+}
+@media screen and (min-width: 800px) {
+  html body div main {
+    max-width: 1024px;
+    margin: auto;
+  }
+}
+html body div footer {
+  border-top: #887CAF solid 1px;
+  padding: 1em;
+}
+html body div footer p {
+  font-size: 0.8em;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    display: flex;
+  }
+}
+main h1 {
+  font-size: 2em;
+}
+main figure {
+  padding: 0;
+  margin: 0;
+}
+main figure img {
+  width: 100%;
+}
+main div.mainContent {
+  box-sizing: border-box;
+}
+@media screen and (min-width: 800px) {
+  main div.mainContent {
+    max-width: 70%;
+    margin-right: 1em;
+  }
+}
+main aside {
+  box-sizing: border-box;
+}
+main aside a {
+  display: block;
+  padding: 0.5em 0;
+}
+main aside h2 {
+  margin: 0 0 0.5em 0;
+}
+main aside form label {
+  display: block;
+}
+main aside form input, main aside form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+main aside form textarea {
+  min-height: 200px;
+}/*# sourceMappingURL=article.css.map */

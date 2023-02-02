@@ -1,0 +1,94 @@
+@use 'colors'
+@use "sass:math"
+
+// valores complejos se pueden guardar en formato de cadena 
+$media-big-screen: "screen and (min-width: 800px)"
+$max-page-width: 1024px
+
+// aplica un borde redondeado y un padding
+@mixin roundBox($ammount, $padding)
+    border-radius: $ammount
+    padding: $padding
+
+
+// estilo para botones en general
+%button
+    text-decoration: none
+    display: inline-block
+    border: none
+    @include roundBox(4px, 0.5em 10px)
+    &:hover
+        color: white
+        background: colors.$color-primary-3
+
+*, input, textarea
+    font-family: Arial, Helvetica, sans-serif
+
+html
+    a
+        color: colors.$color-primary-1
+    body
+        margin: 0
+        div
+            header
+                overflow: hidden
+                padding: 1em 1em 0 1em 
+                div.logoSite
+                    font-size: 2em
+                    font-weight: bold
+
+                div.subTitle
+                    color: colors.$color-primary-1
+                menu
+                    padding: 0
+                    background: colors.$color-secondary-2-1
+                    padding: 1em
+                    overflow: hidden
+                    text-transform: uppercase
+                    margin: 1em -1em 0 -1em
+                    // estilos del menú para pantallas grandes
+                    @media #{$media-big-screen}
+                        padding: 1em 0
+                        div.loginMenu
+                            float: right
+                        div.mainMenu
+                            float: left
+                    
+                    div.menuGroup
+                        overflow: hidden
+                        margin: 0 -1em
+                        @media #{$media-big-screen}
+                            max-width: $max-page-width + 30px
+                            margin: auto
+
+                    // estilos para vínculos
+                    a                        
+                        @extend %button
+                        box-sizing: border-box
+                        display: block
+                        color: white
+                        //estilos para vínculos en pantallas grandes
+                        @media #{$media-big-screen}
+                            display: inline-block
+            nav.breadCrumbs
+                max-width: $max-page-width
+                margin: auto
+                display: block         
+                padding: 1em
+            main
+                overflow: hidden
+                padding:0 1em
+                @media #{$media-big-screen}
+                    max-width: $max-page-width
+                    margin: auto
+
+                nav.breadCrumbs
+                    a
+                        @extend %button
+                
+                
+            footer
+                border-top: colors.$color-primary-1 solid 1px
+                padding: 1em
+                p
+                    font-size: 0.8em

@@ -1,0 +1,40 @@
+@use 'main_structure'
+@use 'colors'
+main
+    @media #{main_structure.$media-big-screen}
+        display: flex
+    h1 
+        font-size: 2em
+    figure
+        padding: 0
+        margin: 0
+        img
+            width: 100%
+    div.mainContent
+        box-sizing: border-box
+        @media #{main_structure.$media-big-screen}
+            max-width: 70%
+            margin-right: 1em
+
+    aside
+        box-sizing: border-box
+        @media #{main_structure.$media-big-screen}
+        a
+            display: block
+            padding: 0.5em 0
+        h2
+            margin: 0 0 0.5em 0
+        
+        form
+            label
+                display: block
+            input, textarea
+                width: 100%
+                box-sizing: border-box
+                display: block
+                padding: 0.5em
+                margin-bottom: 1em
+            textarea
+                min-height: 200px
+            button
+                @extend %button

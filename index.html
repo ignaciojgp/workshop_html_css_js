@@ -6,40 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller de HTML</title>
-    <link href="css/styles.css" rel="stylesheet" >
+    <link href="css/article.css" rel="stylesheet">
 </head>
 
 <body>
-    <main>
+    <div>
         <header>
             <div id="LogoPrincipal" class="logoSite">DeportesMX</div>
             <div class="subTitle">Las mejores noticias de deportes en México</div>
-            <nav>
+            <menu>
                 <div class="menuGroup">
 
                     <div class="loginMenu">
-                        <a href="http://www.google.com">iniciar sesión</a>
-                        <a href="http://www.google.com">registro</a>
-                        <a href="http://www.google.com">rss</a>
+                        <a href="#">iniciar sesión</a>
+                        <a href="#">registro</a>
+                        <a href="#">rss</a>
                     </div>
                     <div class="mainMenu">
-                        <a href="http://www.google.com">futbol</a>
-                        <a href="http://www.google.com">basketball</a>
-                        <a href="http://www.google.com">americano</a>
-                        <a href="http://www.google.com">tenis</a>
-                        <a href="http://www.google.com">golf</a>
+                        <a href="#">futbol</a>
+                        <a href="#">basketball</a>
+                        <a href="#">americano</a>
+                        <a href="#">tenis</a>
+                        <a href="#">golf</a>
                     </div>
 
                 </div>
-            </nav>
+            </menu>
         </header>
-        <article class="articleDetail">
-            <div>
+        <nav class="breadCrumbs">
+            <a href="#">deportes</a>
+            <a href="#">soccer</a>
+        </nav>
+        <main class="articleDetail">
+            <div class="mainContent">
                 <h1>¿Quién será el próximo técnico de México? El uruguayo Guillermo Almada asoma como el reemplazante
-                    del
-                    Tata</h1>
+                    del Tata</h1>
                 <figure>
-                    <img src="https://fastly.picsum.photos/id/399/500/300.jpg?hmac=r1L7N59sv6cA9YpQz7S1d4bnRTxQ7qKwkcuXxIvzkX8" alt="Señora viendo la luz" >
+                    <img src="https://fastly.picsum.photos/id/399/500/300.jpg?hmac=r1L7N59sv6cA9YpQz7S1d4bnRTxQ7qKwkcuXxIvzkX8"
+                        alt="Señora viendo la luz">
                 </figure>
                 <p>Tras la eliminación de México en el Mundial Qatar 2022, también llegó el fin la era de Gerardo Tata
                     Martino como técnico del combinado azteca.</p>
@@ -62,39 +66,58 @@
                     el
                     puesto hasta mayo cuando finalice el Clausura 2023.</p>
                 <p>El 30 de noviembre, tras el último juego del Tri en la justa árabe, el presidente de la Femexfut Yon
-                    de
-                    Luisa indicó que en los siguientes 60 días la Comisión de Selecciones Nacionales iba a hacer un
-                    análisis
-                    e iba a empezar un proceso restructuración.</p>
+                    de Luisa indicó que en los siguientes 60 días la Comisión de Selecciones Nacionales iba a hacer un
+                    análisis e iba a empezar un proceso restructuración.</p>
                 <p>Sin embargo, México regresa a la actividad en marzo y necesita un timonel. El 23 y 26 de este mes
                     jugará
                     ante Surinam y Jamaica en la fase de grupos de Liga de Naciones de la Concacaf. Para estos
-                    compromisos,
-                    la FMF buscaría echar mano de Jaime Lozano como técnico interino del Tri. Lozano también había
-                    surgido
-                    como un candidato para ser el técnico nacional absoluto debido a su gran paso con el combinado Sub
+                    compromisos, la FMF buscaría echar mano de Jaime Lozano como técnico interino del Tri. Lozano
+                    también había
+                    surgido como un candidato para ser el técnico nacional absoluto debido a su gran paso con el
+                    combinado Sub
                     23.
                     En los Juegos Olímpicos de Tokio 2020 (jugados en 2021) guió a la Selección Mexicana a la obtención
-                    de
-                    la medalla de bronce.</p>
+                    de la medalla de bronce.</p>
                 <p>Jimmy actualmente no está dirigiendo tras ser despedido por Necaxa al final del Apertura 2022.</p>
             </div>
             <aside>
-                <h2>Más de sporting news</h2>
-                <a href="http://www.google.com">El mercado de Europa 2023: Leeds y Juventus negocian por McKennie</a>
-                <a href="http://www.google.com">J.J. Macías regresa a los entrenamientos tras su grave lesión</a>
-                <a href="http://www.google.com">Perú en el Sudamericano Sub 20: nueva derrota y despedida sin puntos</a>
+                <section>
+                    <h2>Más de sporting news</h2>
+                    <nav>
+                        <a href="#">El mercado de Europa 2023: Leeds y Juventus negocian por McKennie</a>
+                        <a href="#">J.J. Macías regresa a los entrenamientos tras su grave lesión</a>
+                        <a href="#">Perú en el Sudamericano Sub 20: nueva derrota y despedida sin puntos</a>
+                    </nav>
+                </section>
+                <hr>
+                <section>
+                    <h2>Comentarios</h2>
+                    <form action="#">
+                        <div>
+                            <div>
+                                <label>Nombre</label>
+                                <input name="useName">
+                            </div>
+                            <div>
+                                <label>Message</label>
+                                <textarea></textarea>
+                            </div>
+                            <button>Enviar</button>
+                        </div>
+        
+                    </form>
+                </section>
             </aside>
-        </article>
+        </main>
         <footer>
             <nav>
-                <a href="http://www.google.com">terminos y condiciones</a>
-                <a href="http://www.google.com">legales</a>
-                <a href="http://www.google.com">aviso de privacidad</a>
+                <a href="#">terminos y condiciones</a>
+                <a href="#">legales</a>
+                <a href="#">aviso de privacidad</a>
             </nav>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
         </footer>
-    </main>
+    </div>
 
 </body>
 
