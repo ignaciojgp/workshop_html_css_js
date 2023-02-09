@@ -1,0 +1,28 @@
+html {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    ul.miMenu {
+        li {
+            display: inline-block;
+            a {
+                color: red;
+                &:hover{
+                    color: green;
+                }
+                
+            }
+            &:hover > ul{
+                display: block;
+            }
+            
+            ul {
+                display: none;
+                li {
+                    display: block !important;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
