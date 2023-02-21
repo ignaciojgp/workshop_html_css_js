@@ -17,3 +17,9 @@ https://es.reactjs.org/
 https://reactnative.dev/
 
 https://angular.io/
+
+https://git-scm.com/
+
+https://education.github.com/git-cheat-sheet-education.pdf
+
+https://htmlcheatsheet.com/js/
