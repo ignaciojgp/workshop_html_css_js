@@ -39,36 +39,14 @@ html body div header menu {
   text-transform: uppercase;
   margin: 1em -1em 0 -1em;
 }
-@media screen and (min-width: 800px) {
-  html body div header menu {
-    padding: 1em 0;
-  }
-  html body div header menu div.loginMenu {
-    float: right;
-  }
-  html body div header menu div.mainMenu {
-    float: left;
-  }
-}
 html body div header menu div.menuGroup {
   overflow: hidden;
   margin: 0 -1em;
-}
-@media screen and (min-width: 800px) {
-  html body div header menu div.menuGroup {
-    max-width: 1054px;
-    margin: auto;
-  }
 }
 html body div header menu a {
   box-sizing: border-box;
   display: block;
   color: white;
-}
-@media screen and (min-width: 800px) {
-  html body div header menu a {
-    display: inline-block;
-  }
 }
 html body div nav.breadCrumbs {
   max-width: 1024px;
@@ -79,12 +57,6 @@ html body div nav.breadCrumbs {
 html body div main {
   overflow: hidden;
   padding: 0 1em;
-}
-@media screen and (min-width: 800px) {
-  html body div main {
-    max-width: 1024px;
-    margin: auto;
-  }
 }
 html body div footer {
   border-top: #887CAF solid 1px;

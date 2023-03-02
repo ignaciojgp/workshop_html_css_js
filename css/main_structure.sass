@@ -2,7 +2,7 @@
 @use "sass:math"
 
 // valores complejos se pueden guardar en formato de cadena 
-$media-big-screen: "screen and (min-width: 800px)"
+//$media-big-screen: "screen and (min-width: 800px)"
 $max-page-width: 1024px
 
 // aplica un borde redondeado y un padding
@@ -47,7 +47,7 @@ html
                     text-transform: uppercase
                     margin: 1em -1em 0 -1em
                     // estilos del menú para pantallas grandes
-                    @media #{$media-big-screen}
+                    //@media #{$media-big-screen}
                         padding: 1em 0
                         div.loginMenu
                             float: right
@@ -57,7 +57,7 @@ html
                     div.menuGroup
                         overflow: hidden
                         margin: 0 -1em
-                        @media #{$media-big-screen}
+                        //@media #{$media-big-screen}
                             max-width: $max-page-width + 30px
                             margin: auto
 
@@ -68,7 +68,7 @@ html
                         display: block
                         color: white
                         //estilos para vínculos en pantallas grandes
-                        @media #{$media-big-screen}
+                        //@media #{$media-big-screen}
                             display: inline-block
             nav.breadCrumbs
                 max-width: $max-page-width
@@ -78,7 +78,7 @@ html
             main
                 overflow: hidden
                 padding:0 1em
-                @media #{$media-big-screen}
+                //@media #{$media-big-screen}
                     max-width: $max-page-width
                     margin: auto
 
