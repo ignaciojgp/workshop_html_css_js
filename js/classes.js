@@ -6,6 +6,10 @@ class CarritoDeCompras {
     constructor () {
         this.canasta = [];
     }
+
+    static shared() {
+        return new CarritoDeCompras()
+    }
     
     // Este método agrega productos al carrito
     agregarProducto(producto) {
@@ -43,36 +47,104 @@ class Producto {
         this.cantidad = 1;
         this.precio = 0.1;
     }
+
     agregarOtro (cuantos){
         this.cantidad = this.cantidad + cuantos
-     }
+    }
+
     quitarProducto (cuantos){
         this.cantidad = this.cantidad - cuantos
     } 
 }
+/*
+interface ConsultorDeEmpresas {
+    obtenerEmpresas()
+}
+
+interface ConsultorDeEmpresasRelacionadas {
+    obtenerEmpresasRelacionadas(sector)
+}
+
+class ConsultorDeEmpresasImplementacion extends ConsultorDeEmpresas {
+    obtenerEmpresas() {
+        // hace logica de verdad
+    }
+}
+
+class ConsultorDeEmpresasRelacionadasImplementacion extends ConsultorDeEmpresasRelacionadas {
+    obtenerEmpresasRelacionadas() {
+        // hace logica de verdad
+    }
+}
+
+class FakeConsultorDeEmpresas {
+    obtenerEmpresas() {
+        // hace logica de verdad
+    }
+}
+*/
+class Verdura extends Producto {
+    constructor() {
+        super();
+        this.vencimiento = new Date() ;
+        this.precio = 0.5
+    }
+}
+
+class Electronico extends Producto {
+    constructor() {
+        super();
+        this.consumo = 4
+    }
+}
+
 
 
 /// bloque de construcción de instancia
+var carrito = CarritoDeCompras.shared()
 
-var carrito = new CarritoDeCompras()
-var manzana = new Producto()
-manzana.nombre = "manzana"
-manzana.precio = 5.5
+var leche = new Producto()
+leche.nombre = "leche"
+leche.precio = 17.0
 
-var platano = new Producto()
-platano.nombre = "platanin"
-platano.precio = 3.5
+var calabaza = new Verdura() 
+calabaza.nombre = "Calabaza"
+calabaza.vencimiento = new Date("2023-03-12 GMT-0600")
 
-manzana2 = new Producto()
-manzana2.nombre = manzana.nombre
-manzana2.precio = manzana.precio
-manzana2.cantidad = manzana.cantidad
+carrito.agregarProducto(leche);
+carrito.agregarProducto(calabaza);
+console.log(carrito);
 
-carrito.agregarProducto(manzana)
-carrito.agregarProducto(platano)
+/*
+S- Single Responsibility Principle
+O- Open Close Principle
+L- Liskov Substitution Principle
+I- Interface Segregation Principle
+D- Dependency Inversion Principle
+*/
 
-console.log(carrito)
-var referenciadeManzana = carrito.dameProductoPorNombre("manzana")
-referenciadeManzana.agregarOtro(4)
-console.log("producto encontrado por nombre")
-console.log(referenciadeManzana)
+/*
+capa 1 : Presentación
+    contruye la lista
+
+
+capa 2 : Dominio 
+    lista de empresas licitando
+    Lista<Empresa>
+        Empresa
+            Nombre
+            Razon Social
+
+
+capa 3 : Datos o infraestructa 
+    EXEL
+        Empresas en como fueron en el excel
+            Descripción
+            Fecha de creación
+            no.
+    ServicioWebInegi
+        Empresas en formato inegi
+
+*/
+
+        
