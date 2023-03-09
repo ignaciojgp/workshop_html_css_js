@@ -37,7 +37,7 @@ class CarritoDeCompras {
     }
 
     vaciarCarrito() {
-        
+        this.canasta = [];
     }
 }
 
